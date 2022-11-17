@@ -30,14 +30,9 @@ function AboutProfile(props) {
         )}
         {props.jobTitle && (
           <Text variant="medium" center>
-            {props.jobTitle} test
+            {props.jobTitle}
           </Text>
         )}
-          {props.jobDescription && (
-              <Text variant="medium" center>
-                  {props.jobDescription}
-              </Text>
-          )}
       </Box>
     </Box>
   )

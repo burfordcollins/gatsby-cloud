@@ -2840,6 +2840,16 @@
           "validations": [],
           "disabled": false,
           "omitted": false
+        },
+        {
+          "id": "jobDescription",
+          "name": "Job description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
         }
       ]
     },
@@ -5830,6 +5840,11 @@
         {
           "fieldId": "jobTitle",
           "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "jobDescription",
+          "widgetId": "multipleLine",
           "widgetNamespace": "builtin"
         }
       ]
