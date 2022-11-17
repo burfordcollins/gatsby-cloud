@@ -9,7 +9,7 @@ export const aboutHeroHeader = style({
 })
 
 export const aboutHeroText = style({
-  fontSize: theme.fontSizes[3],
+  fontSize: theme.fontSizes[4],
   marginBottom: theme.space[5],
   maxWidth: "798px",
   "@media": {

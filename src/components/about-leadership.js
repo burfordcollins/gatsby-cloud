@@ -14,7 +14,7 @@ import {
 
 function AboutProfile(props) {
   return (
-    <Box width="third" padding={4} center>
+    <Box width="half" padding={2} center>
       {props.image && (
         <GatsbyImage
           alt={props.image.alt}
@@ -30,9 +30,14 @@ function AboutProfile(props) {
         )}
         {props.jobTitle && (
           <Text variant="medium" center>
-            {props.jobTitle}
+            {props.jobTitle} test
           </Text>
         )}
+          {props.jobDescription && (
+              <Text variant="medium" center>
+                  {props.jobDescription}
+              </Text>
+          )}
       </Box>
     </Box>
   )
@@ -44,7 +49,7 @@ export default function AboutLeadership(props) {
       <Container width="tight">
         <Box center paddingY={4}>
           {props.kicker && <Kicker>{props.kicker}</Kicker>}
-          {props.heading && <Heading as="h1">{props.heading}</Heading>}
+          {props.heading && <Heading as="h2">{props.heading}</Heading>}
           {props.subhead && <Text>{props.subhead}</Text>}
         </Box>
         <FlexList gap={0} variant="center" alignItems="start">
@@ -67,6 +72,7 @@ export const query = graphql`
       id
       name
       jobTitle
+      jobDescription
       image {
         gatsbyImageData
         alt

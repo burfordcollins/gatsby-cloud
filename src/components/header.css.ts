@@ -4,6 +4,8 @@ import { media } from "./ui.css"
 
 export const desktopHeaderNavWrapper = style({
   position: "relative",
+  fontSize: theme.fontSizes[4],
+  fontWeight: theme.fontWeights.semibold,
   zIndex: 1,
   display: "none",
   "@media": {
