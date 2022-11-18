@@ -67,7 +67,6 @@ export const query = graphql`
       id
       name
       jobTitle
-      jobDescription
       image {
         gatsbyImageData
         alt

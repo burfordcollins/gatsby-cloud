@@ -15,7 +15,7 @@ import {
 
 function Product(props) {
   return (
-    <Box width="full" padding={2} center center>
+    <Box width="full" padding={2} center>
       {props.image && (
         <Icon
           alt={props.image.alt}
