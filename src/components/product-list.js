@@ -33,7 +33,7 @@ function Product(props) {
 export default function ProductList(props) {
   return (
     <Section>
-      <Container>
+      <Container width="tight">
         <Box center paddingY={3}>
           <Heading>
             {props.kicker && <Kicker>{props.kicker}</Kicker>}
