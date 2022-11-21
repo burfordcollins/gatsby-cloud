@@ -15,7 +15,7 @@ import {
 
 function Product(props) {
   return (
-    <Box width="full" padding={2} center>
+    <Box width="full" padding={3} center>
       {props.image && (
         <Icon
           alt={props.image.alt}
@@ -41,7 +41,7 @@ export default function ProductList(props) {
           </Heading>
           {props.text && <Text>{props.text}</Text>}
         </Box>
-        <FlexList gap={3} variant="responsive">
+        <FlexList gap={3} variant="spaceEvenly" responsive>
           {props.content.map((product) => (
             <li key={product.id}>
               <Product {...product} />

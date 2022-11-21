@@ -8,8 +8,8 @@ export default function Page(props) {
 
   return (
     <Layout {...page}>
-      <Box paddingY={5}>
-        <Container width="narrow">
+      <Box paddingY={6}>
+        <Container width="tight">
           <Heading as="h1">{page.title}</Heading>
           <div
             dangerouslySetInnerHTML={{
